@@ -2,6 +2,9 @@
 This is a 3D-printable device that you can attach to the handles of a wheelchair.
 It prevents/deters people from grabbing the handles without your permission/consent.
 
+If you don't care about customization and/or your handles are either 7/8" or 5/8",
+there are pre-built STLs in the `build/` directory.
+
 ## Authoritative links
 - [Git repo](https://github.com/Joedang/wheelchairHandleDeterrent)
     - This is the "canonical" source. I'll try to make sure Thingiverse matches, but it's a manual process.

@@ -29,7 +29,8 @@ By default, this `.scad` file takes input parameters in inches and outputs in mi
 So, unless you've changed `scaleFactor`, that should still be the case.
 
 #### Instant-quote Manufacturing Brokers
-- [Hubs](https://www.hubs.com/) (This is the one I typically use.)
+- [Hubs](https://www.hubs.com/) (This is the one I typically use, but they have a high minimum order price.)
+- [Craftcloud3d](https://craftcloud3d.com/) (cheap and no minimum order price)
 - [Xometry](https://www.xometry.com)
 - [Protolabs](https://www.protolabs.com/services/3d-printing/)
 - [Fictiv](https://www.fictiv.com/3d-printing-service)

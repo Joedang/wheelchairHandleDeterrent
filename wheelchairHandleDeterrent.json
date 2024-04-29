@@ -1,6 +1,6 @@
 {
     "parameterSets": {
-        "7\/8\" spikes with tab": {
+        "7-8-spikes-with-tab": {
             "$fa": "6",
             "$fs": "1",
             "boltHoleID_input": "0.13",
@@ -21,7 +21,7 @@
             "tabLength_input": "0.375",
             "tabThickness_input": "0.188"
         },
-        "7\/8\" spikes friction fit": {
+        "7-8-spikes-friction-fit": {
             "$fa": "6",
             "$fs": "1",
             "boltHoleID_input": "0.13",
@@ -42,7 +42,7 @@
             "tabLength_input": "0.375",
             "tabThickness_input": "0.188"
         },
-        "7\/8\" disc with tab": {
+        "7-8-disc-with-tab": {
             "$fa": "6",
             "$fs": "1",
             "boltHoleID_input": "0.13",
@@ -63,7 +63,7 @@
             "tabLength_input": "0.375",
             "tabThickness_input": "0.188"
         },
-        "7\/8\" disc friction fit": {
+        "7-8-disc-friction-fit": {
             "$fa": "6",
             "$fs": "1",
             "boltHoleID_input": "0.13",
@@ -84,7 +84,7 @@
             "tabLength_input": "0.375",
             "tabThickness_input": "0.188"
         },
-        "5\/8\" spikes with tab": {
+        "5-8-spikes-with-tab": {
             "$fa": "6",
             "$fs": "1",
             "boltHoleID_input": "0.13",
@@ -105,7 +105,7 @@
             "tabLength_input": "0.375",
             "tabThickness_input": "0.188"
         },
-        "5\/8\" spikes friction fit": {
+        "5-8-spikes-friction-fit": {
             "$fa": "6",
             "$fs": "1",
             "boltHoleID_input": "0.13",
@@ -126,7 +126,7 @@
             "tabLength_input": "0.375",
             "tabThickness_input": "0.188"
         },
-        "5\/8\" disc with tab": {
+        "5-8-disc-with-tab": {
             "$fa": "6",
             "$fs": "1",
             "boltHoleID_input": "0.13",
@@ -147,7 +147,7 @@
             "tabLength_input": "0.375",
             "tabThickness_input": "0.188"
         },
-        "5\/8\" disc friction fit": {
+        "5-8-disc-friction-fit": {
             "$fa": "6",
             "$fs": "1",
             "boltHoleID_input": "0.13",

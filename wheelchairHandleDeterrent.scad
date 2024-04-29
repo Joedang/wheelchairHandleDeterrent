@@ -13,12 +13,15 @@
 /*[technical stuff]*/
 // factor for unit conversion
 scaleFactor=25.4; // [25.4:input inches and output mm (RECOMMENDED), 2.54:input inches and output cm, 1:input units same as output units, 0.39370078740157480315:input cm output inches, 0.03937007874015748031:input mm output inches (NOT RECOMMENDED)]
+
+// I would like fa and fs to be customizable, but there's some scope-rule subltety going on, so I'm just hard-coding them...
+
 // minimum facet angle for circles (not influenced by scaleFactor). Lower this to eliminate the "lowpoly" appearance of the ring (increases STL file size).
-fa_input=6; // [1:12]
-$fa=fa_input;
+//fa_input=6; // [1:12]
+$fa=3;
 // minimum facet size for circles (not influenced by scaleFactor). Lower this to eliminate the "lowpoly" appearance of the ring (increases STL file size).
-fs_input=1; // [0.01:0.01:2]
-$fs=fs_input;
+//fs_input=1; // [0.01:0.01:2]
+$fs=0.04;
 
 /*[ring]*/
 // inner diameter of the ring. Make this a little smaller (about 0.04 inches) than the OD of the handle for a friction fit.

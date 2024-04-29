@@ -43,12 +43,19 @@ Realistically, `ringID` is the only thing that may need tweaking.
 If running OpenSCAD isn't an option, you can customize the model online via 
 [Thingiverse](https://www.thingiverse.com/apps/customizer/run?thing_id=6600517).
 
+__Currently, the Thingiverse customizer is broken by this design!__
+I'll try to fix it later. For now, you'll have to just use OpenSCAD.
+Fortunately, that process is relatively painless (see below).
+
 ### OpenSCAD
 To customize on your local machine:
 
-1. Open `wheelchairHandleDeterrent.scad` in [OpenSCAD](https://openscad.org/) (available on all major desktop OSes).
-1. Click "Window" and uncheck "Hide Customizer".
+1. Install [OpenSCAD](https://openscad.org/) (available on all major desktop OSes).
+1. Download [wheelchairHandleDeterrent.scad](https://raw.githubusercontent.com/Joedang/wheelchairHandleDeterrent/main/wheelchairHandleDeterrent.scad)
+1. Open `wheelchairHandleDeterrent.scad` in OpenSCAD.
+1. Click "Window" and __uncheck__ "Hide Customizer".
 1. In the customizer, click the dropdown that says "design default values" and select your preference.
     1. Alternatively, you can tweak each parameter individually, using one of the presets as a starting point.
 1. Click "Design" then "Render" and wait for the render to finish. (This should only take a second or two.)
 1. Click "File", then "Export", then "Export as STL".
+    1. This is the file you'll either upload to one of the instant-quote sites (see above) or open in your slicer.

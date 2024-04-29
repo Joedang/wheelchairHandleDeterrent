@@ -1,5 +1,5 @@
 // Wheelchair Handle Deterrent
-// Version 1.1
+// Version 1.2
 // Fully parameterized model for wheelchair handle spikes.
 // You attach this to the handles of a wheelchair to prevent people from grabbing them without consent/permission.
 
@@ -13,11 +13,11 @@
 /*[technical stuff]*/
 // factor for unit conversion
 scaleFactor=25.4; // [25.4:input inches and output mm (RECOMMENDED), 2.54:input inches and output cm, 1:input units same as output units, 0.39370078740157480315:input cm output inches, 0.03937007874015748031:input mm output inches (NOT RECOMMENDED)]
-// minimum facet angle for circles (not influenced by scaleFactor). Lower this to eliminate the "lowpoly" appearance of the ring.
+// minimum facet angle for circles (not influenced by scaleFactor). Lower this to eliminate the "lowpoly" appearance of the ring (increases STL file size).
 fa_input=6; // [1:12]
 $fa=fa_input;
-// minimum facet size for circles (not influenced by scaleFactor). Lower this to eliminate the "lowpoly" appearance of the ring.
-fs_input=1; // [0.1:0.1:2]
+// minimum facet size for circles (not influenced by scaleFactor). Lower this to eliminate the "lowpoly" appearance of the ring (increases STL file size).
+fs_input=1; // [0.01:0.01:2]
 $fs=fs_input;
 
 /*[ring]*/
@@ -54,7 +54,6 @@ nSpikes=7; // [1:36]
 spikeAngleStart=-45; // [-90:270]
 // circumferential positoin where the spikes end. This must be greater than spikeAngleStart.
 spikeAngleEnd=225; // [-90:270]
-spikeRange=[spikeAngleStart,spikeAngleEnd];
 spikeStep=(spikeAngleEnd-spikeAngleStart)/(nSpikes-1);
 
 /*[bolt tab]*/

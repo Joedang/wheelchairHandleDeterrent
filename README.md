@@ -2,6 +2,11 @@
 This is a 3D-printable device that you can attach to the handles of a wheelchair.
 It prevents/deters people from grabbing the handles without your permission/consent.
 
+## Authoritative links
+- [Git repo](https://github.com/Joedang/wheelchairHandleDeterrent)
+    - This is the "canonical" source. I'll try to make sure Thingiverse matches, but it's a manual process.
+- [Thingiverse thing](https://www.thingiverse.com/thing:6600517)
+
 ## Manufacturing
 This is intended to be FDM printed without supports.
 0.2 mm layers with 15% infill and 2 walls should be enough. (If they break, they only become more effective.)
@@ -32,10 +37,11 @@ So, unless you've changed `scaleFactor`, that should still be the case.
 
 ## Customization
 The model is fully parameterized, so you can customize it however you like.
+Realistically, `ringID` is the only thing that may need tweaking.
 
 ### Thingiverse
-The easiest way to customize the model is through Thingiverse.
-(link coming soon)
+If running OpenSCAD isn't an option, you can customize the model online via 
+[Thingiverse](https://www.thingiverse.com/apps/customizer/run?thing_id=6600517).
 
 ### OpenSCAD
 To customize on your local machine:

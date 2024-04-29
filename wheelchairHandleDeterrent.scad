@@ -1,5 +1,5 @@
 // Wheelchair Handle Deterrent
-// Version 1.0
+// Version 1.1
 // Fully parameterized model for wheelchair handle spikes.
 // You attach this to the handles of a wheelchair to prevent people from grabbing them without consent/permission.
 
@@ -14,9 +14,11 @@
 // factor for unit conversion
 scaleFactor=25.4; // [25.4:input inches and output mm (RECOMMENDED), 2.54:input inches and output cm, 1:input units same as output units, 0.39370078740157480315:input cm output inches, 0.03937007874015748031:input mm output inches (NOT RECOMMENDED)]
 // minimum facet angle for circles (not influenced by scaleFactor). Lower this to eliminate the "lowpoly" appearance of the ring.
-$fa=6; // [1:12]
+fa_input=6; // [1:12]
+$fa=fa_input;
 // minimum facet size for circles (not influenced by scaleFactor). Lower this to eliminate the "lowpoly" appearance of the ring.
-$fs=1; // [0.1:0.1:2]
+fs_input=1; // [0.1:0.1:2]
+$fs=fs_input;
 
 /*[ring]*/
 // inner diameter of the ring. Make this a little smaller (about 0.04 inches) than the OD of the handle for a friction fit.
@@ -53,7 +55,7 @@ spikeAngleStart=-45; // [-90:270]
 // circumferential positoin where the spikes end. This must be greater than spikeAngleStart.
 spikeAngleEnd=225; // [-90:270]
 spikeRange=[spikeAngleStart,spikeAngleEnd];
-spikeStep=(spikeRange[1]-spikeRange[0])/(nSpikes-1);
+spikeStep=(spikeAngleEnd-spikeAngleStart)/(nSpikes-1);
 
 /*[bolt tab]*/
 // This adds a tab with a hole, allowing you to tighten the ring with a screw and nut. The length of bolt/screw should be at least 2*tabThickness+slitSize plus the thickness of the nut and any washers you use. (You should use washers.)
@@ -89,7 +91,7 @@ jointWidth=tabThickness*2+slitSize;
 module spikeArray(){
     color("red", alpha = 0.5)
     union(){
-    for (angle=[spikeRange[0]:spikeStep:spikeRange[1]])
+    for (angle=[spikeAngleStart:spikeStep:spikeAngleEnd])
     {
         rotate([0,0,angle])
             translate([0,-ringID/2,-ringWidth/2])

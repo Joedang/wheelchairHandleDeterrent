@@ -1,4 +1,5 @@
 // Wheelchair Handle Deterrent
+// Version 1.0
 // Fully parameterized model for wheelchair handle spikes.
 // You attach this to the handles of a wheelchair to prevent people from grabbing them without consent/permission.
 

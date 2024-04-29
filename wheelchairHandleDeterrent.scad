@@ -1,12 +1,16 @@
+// Wheelchair Handle Deterrent
 // Fully parameterized model for wheelchair handle spikes.
 // You attach this to the handles of a wheelchair to prevent people from grabbing them without consent/permission.
-// 2024-04-29, Joe Shields
 
-// This work is licensed under the Creative Commons 4.0 license.
-// https://creativecommons.org/licenses/by-sa/4.0/
+// Wheelchair Handle Deterrent © 2024-04-29 by Joe Shields is licensed under CC BY-SA 4.0. 
+// To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+// This means you can distribute, remix, adapt, and build upon the material in any medium or format, 
+// even for commercial purposes, provided the following conditions:
+// You must provide attribution to the creator(s).
+// You must license any derivative works under this same license.
 
 /*[technical stuff]*/
-// factor for unit conversion (25.4: enter values as inches, output is in mm) (2.54: enter values as inches, output is in cm) (1: entered values and outputs have the same units) (1/2.54: enter values as cm, output is in inches (NOT RECOMMENDED)) (1/25.4: enter values as mm, output is in inches (NOT RECOMMENDED))
+// factor for unit conversion
 scaleFactor=25.4; // [25.4:input inches and output mm (RECOMMENDED), 2.54:input inches and output cm, 1:input units same as output units, 0.39370078740157480315:input cm output inches, 0.03937007874015748031:input mm output inches (NOT RECOMMENDED)]
 // minimum facet angle for circles (not influenced by scaleFactor). Lower this to eliminate the "lowpoly" appearance of the ring.
 $fa=6; // [1:12]
@@ -15,7 +19,7 @@ $fs=1; // [0.1:0.1:2]
 
 /*[ring]*/
 // inner diameter of the ring. Make this a little smaller (about 0.04 inches) than the OD of the handle for a friction fit.
-ringID_input=0.870; // .001
+ringID_input=0.875; // .001
 ringID=ringID_input*scaleFactor;
 
 // wall thickness of the ring
